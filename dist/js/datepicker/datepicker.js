@@ -9,5 +9,5 @@ $("#pickdate").dateDropper({
 });
 $("#picktime").timeDropper({
     meridians: false,
-    format: 'HH:mm',
+    format: 'HH:mm'
 });
