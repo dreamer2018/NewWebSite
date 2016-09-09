@@ -45,7 +45,7 @@ iframe {
 }
 
 a {
-    color: #088acb;
+    color: #0763cb;
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -56,10 +56,9 @@ a {
     transition: background-color .4s linear, color .4s linear;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
     text-decoration: none;
-    color: #62bbe7;
+    color: #2ecbf2;
 }
 
 ::-moz-selection {
@@ -82,8 +81,7 @@ a:focus {
 	BOOTSTRAP MODIFICATIONS & TWEAKS
 ################################################################# */
 .navbar {
-    padding-top: 15px;
-    margin-bottom: 0px;
+    padding-top: 5px;
 }
 
 .navbar-default {
@@ -92,33 +90,38 @@ a:focus {
 }
 
 .navbar-default .navbar-nav > li.active > a {
-    color: #17f2f0;
-    border-bottom: 4px solid #17f2f0;
+    color: #2ecbf2;
+    border-bottom: 4px solid #2ecbf2;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #384452;
+    color: #ffffff;
     background: transparent !important;
     font-weight: 700;
     font-size: 12px;
 }
 
+
+
+
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #17f2f0 !important;
+    color: #2ecbf2 !important;
     background: transparent !important;
 }
 
-.navbar-brand {
+.navbar-logo {
     font-weight: 900;
     height: 50px;
     line-height: 50px;
+    color: #ffffff;
+    font-size: 20px;
 }
 
-.navbar-brand img {
-    margin-right: 5px;
+.navbar-logo img {
+    margin-right: 6px;
 }
 
-.navbar-header .navbar-brand {
+.navbar-header{
     color: #ffffff;
 }
 
@@ -319,11 +322,6 @@ a:focus {
     color: #384452;
     font-weight: 700;
     margin-bottom: 15px;
-}
-
-csmall {
-    font-size: 12px;
-    color: #b3b3b3;
 }
 
 .spacing {
