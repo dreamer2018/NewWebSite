@@ -17,6 +17,15 @@
     <!-- Custom styles for this template -->
     <link href="../dist/css/style.css" rel="stylesheet">
     <link href="../dist/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .navbar-default .navbar-nav > li.active > a {
+            color: #ffffff;
+        }
+
+        .navbar-default .navbar-nav > li > a {
+            color: #ffffff;
+        }
+    </style>
 
 </head>
 
@@ -31,8 +40,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="https://tuna.moe/"><img src="../images/xiyoulinux.png"
-                                                                  style="width: 60px;height: 60px;">西邮Linux兴趣小组</a>
+            <a class="navbar-brand" href="#"><img src="../images/xiyoulinux.png"
+                                                  style="width: 50px;height: 50px;">西邮Linux兴趣小组</a>
         </div>
         <div class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav">
@@ -442,6 +451,7 @@
             setTimeout(function () {
             }, 1000);
         }
+
         $('nav.portfolio-filter ul a').on('click', function () {
             var selector = $(this).attr('data-filter');
             $container.isotope({filter: selector}, refreshWaypoints());
@@ -465,6 +475,7 @@
             }
             return columnNumber;
         }
+
         function setColumns() {
             var winWidth = $(window).width(),
                     columnNumber = getColumnNumber(),
@@ -475,10 +486,12 @@
                 });
             });
         }
+
         function setPortfolio() {
             setColumns();
             $container.isotope('reLayout');
         }
+
         $container.imagesLoaded(function () {
             setPortfolio();
         });
