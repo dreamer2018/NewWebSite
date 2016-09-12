@@ -1,5 +1,5 @@
 .head-navigation{
-    background-color: #ffffff;
+    background-color:darkslategray ;
 }
 
 .active-header{
@@ -117,4 +117,7 @@
     padding-left: 40px;
     font-family: 幼圆;
     font-size: 50px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #4cae4c;
 }
